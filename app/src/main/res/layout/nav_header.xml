@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/view_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:gravity="bottom"
+    android:background="@color/yellow"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/dashboard_person_logo"
+        android:background="@drawable/circle_drawable"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvuser"
+            android:text="Teacher"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#111"/>
+
+      <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvstd"
+            android:text="Standard 10 C"
+            android:textSize="13dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#111"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item android:drawable="@drawable/dashboard_person_logo"/>-->
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/lightblue"/>
+            <size android:height="100dp"
+                android:width="100dp"/>
+        </shape>
+    </item>
+
+</layer-list>

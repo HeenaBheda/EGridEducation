@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">EGridEducation</string>
+    <string name="orgID">Organitation ID</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="submitbtn">Submit</string>
+    <string name="main_login_lbl">EGrid Education Teacher App</string>
+    <string name="contact_admin">Having Difficulty in Login Contact Your Admin</string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="rememberorgid">Remeber Organition ID when you login next time </string>
+    <string name="logout">Logout</string>
+    <string name="liveclass">Live Class</string>
+    <string name="material">Material</string>
+    <string name="createcclass">Create New Class</string>
+    <string name="addlecture">Add Lecture</string>
+    <string name="setDatTime">Select Date and Time</string>
+    <string name="setDat">Select Date</string>
+    <string name="setTime">Select Time</string>
+    <string name="subject">Subject</string>
+    <string name="standard">Standard</string>
+    <string name="students">Number of students</string>
+    <string name="btnaddclass">Create class</string>
+    <string name="toolbartext">E-Grid Education System</string>
+    <string name="splash_screen_text">E-Grid Teacher App</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_dash__board">Dash_BoardActivity</string>
+    <string name="title_activity_dash_board__detail_">DashBoard_Detail_Activity</string>
+</resources>

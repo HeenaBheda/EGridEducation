@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+    <!--
+            Add menu items here
+            Menu items with icon and Title
+    -->
+    <item
+        android:id="@+id/first"
+        android:title="Dashboard"
+        android:icon="@drawable/dashboard_logo"/>
+        <item
+           android:id="@+id/second"
+            android:title="Material"
+            android:icon="@drawable/material_logo"/>
+        <item
+            android:id="@+id/third"
+            android:title="Logout"
+            android:icon="@drawable/logout_logo"/>
+
+    </group>
+
+</menu>

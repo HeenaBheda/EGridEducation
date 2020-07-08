@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/liveclass"
+        android:icon="@drawable/live_class_logo"
+        android:title="@string/liveclass"/>
+
+
+    <item android:id="@+id/createclass"
+        android:icon="@drawable/create_class_logo"
+        android:title="@string/createcclass"/>
+
+    <!--<item android:id="@+id/material"
+        android:icon="@drawable/material_logo"
+        android:title="@string/material"/>-->
+
+</menu>

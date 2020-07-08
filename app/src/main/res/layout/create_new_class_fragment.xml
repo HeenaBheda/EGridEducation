@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+-->
+
+
+
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameCreateclass"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlCreateclass">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/addlecture"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/yellow_gradient"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:padding="6dp"/>
+
+        <ScrollView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/scrollView"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:id="@+id/tiSubject"
+                    android:padding="10dp"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/subject"
+                        android:id="@+id/txtSubject"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tiStandard"
+                    android:layout_below="@+id/tiSubject"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/standard"
+                        android:id="@+id/txtStandard"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tiStudents"
+                    android:layout_below="@+id/tiStandard"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/students"
+                        android:id="@+id/txtStudents"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setDatTime"
+                    android:padding="5dp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/tiStudents"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setDat"
+                    android:padding="15dp"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/textView4"
+                    android:padding="15dp"
+                    android:text="@string/setTime" />
+
+                <Button
+                    android:id="@+id/buttonAddclass"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView5"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/yellow_gradient"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:text="@string/btnaddclass" />
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+        <!--<include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/bottom_navigation_dashboard"
+            android:id="@+id/bottomNavigationCreateClass"
+            android:layout_alignParentBottom="true"/>
+    -->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_navigation_dashboard_menu"
+            android:id="@+id/bottomNavigationCreateClass"
+            android:elevation="1.0dp"
+            app:itemIconTint="@color/yellow"
+            app:itemTextColor="@color/yellow"/>
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+<!--</RelativeLayout>-->
