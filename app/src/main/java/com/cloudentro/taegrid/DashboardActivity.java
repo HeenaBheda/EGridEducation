@@ -68,7 +68,8 @@ public class DashboardActivity extends AppCompatActivity {
                     loadFragment(new DashBoard_Fragment());
                     drawerLayout.closeDrawer(Gravity.LEFT);
                 }else if (itemId==R.id.second){
-
+                    loadFragment(new Material_Fragment());
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                 } else if (itemId == R.id.third) {
                     SharedPreferences sharedPreferences=getApplicationContext().getSharedPreferences("Create_Class",MODE_PRIVATE);
                     SharedPreferences.Editor editor=sharedPreferences.edit();

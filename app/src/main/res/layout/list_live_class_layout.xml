@@ -48,7 +48,7 @@
                 android:id="@+id/className"
                 android:textColor="#111"
                 android:textSize="15dp"
-                android:text="Class "
+                android:text=""
                 android:layout_marginTop="10dp"
                 android:layout_below="@+id/tvSubject"
                 android:layout_alignParentLeft="true"/>
@@ -69,7 +69,7 @@
                 android:id="@+id/tvTime"
                 android:textSize="15dp"
                 android:textColor="#000"
-                android:text="At "
+                android:text=""
                 android:layout_below="@id/btnDeleteClass"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="30dp"/>

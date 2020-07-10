@@ -60,10 +60,12 @@ public class Adapter_List_Class extends RecyclerView.Adapter<Adapter_List_Class.
     public void onBindViewHolder( MyViewHolder holder, int position) {
 
         listClass_pojo=classList.get(position);
+        Log.e("Pojo", String.valueOf(listClass_pojo));
         holder.textViewsubject.setText(listClass_pojo.getSubject());
-        holder.textViewClassname.append(listClass_pojo.getStandard());
+        //holder.textViewClassname.append(listClass_pojo.getStandard());
+        holder.textViewClassname.setText("Class "+listClass_pojo.getStandard());
         holder.textViewClassId.setText(listClass_pojo.getClassName());
-        holder.textViewTime.append(listClass_pojo.getTime());
+        holder.textViewTime.setText("At "+listClass_pojo.getTime());
         meetingUrl=listClass_pojo.getMeetingUrl();
 
         holder.buttonDelete.setOnClickListener(new View.OnClickListener() {
@@ -76,10 +78,12 @@ public class Adapter_List_Class extends RecyclerView.Adapter<Adapter_List_Class.
                             public void onResponse(String response) {
                                 Log.e("Class Response",response);
                                 if (response!=null){
-                                    classList.remove(position);
+                                    classList.remove(listClass_pojo);
+                                    //classList.remove(position);
                                    // notifyDataSetChanged();
                                     notifyItemRemoved(position);
-                                   // notifyItemRangeChanged(position,classList.size());
+                                    notifyDataSetChanged();
+                                    notifyItemRangeChanged(position,classList.size());
                                 }else {
                                     Toast.makeText(context,"Cannot delete!",Toast.LENGTH_LONG).show();
                                 }
@@ -132,7 +136,8 @@ public class Adapter_List_Class extends RecyclerView.Adapter<Adapter_List_Class.
                 public void onClick(View v) {
                     URL serverURL;
                     try {
-                        serverURL = new URL(meetingUrl+"/"+listClass_pojo.getClassName());
+                       // serverURL = new URL(meetingUrl+"/"+listClass_pojo.getClassName());
+                        serverURL = new URL("https://meet/jit.si"+"/"+listClass_pojo.getClassName());
                     } catch (MalformedURLException e) {
                         e.printStackTrace();
                         throw new RuntimeException("Invalid server URL!");
@@ -148,9 +153,9 @@ public class Adapter_List_Class extends RecyclerView.Adapter<Adapter_List_Class.
                         // one we set earlier and this one when joining.
                         JitsiMeetConferenceOptions options
                                 = new JitsiMeetConferenceOptions.Builder()
-                             //   .setServerURL(serverURL)
-                                .setRoom(String.valueOf(serverURL)+listClass_pojo.getClassName())
-                               // .setRoom(listClass_pojo.getClassName())
+                                .setServerURL(serverURL)
+                                //.setRoom(String.valueOf(serverURL)+listClass_pojo.getClassName())
+                                .setRoom(listClass_pojo.getClassName())
                                 .setSubject(listClass_pojo.getSubject())
                                 .setAudioMuted(false)
                                 .setVideoMuted(false)

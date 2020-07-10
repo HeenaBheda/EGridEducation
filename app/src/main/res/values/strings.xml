@@ -29,6 +29,9 @@
     <string name="btnaddclass">Create class</string>
     <string name="toolbartext">E-Grid Education System</string>
     <string name="splash_screen_text">E-Grid Teacher App</string>
+    <string name="uploadMaterial">Upload Material</string>
+    <string name="uploadDropbox">Upload Material To Dropbox</string>
+    <string name="uploadMatrialbtn">Upload</string>
 
 
     <string name="menu_home">Home</string>
